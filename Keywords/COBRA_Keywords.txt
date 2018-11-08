@@ -1,0 +1,9 @@
+*** Keywords ***
+Capture Screenshot And Close Browser
+    Capture Page Screenshot
+    Close Browser 
+    
+Open Cobra
+    [Arguments]    ${url}    ${browser}    
+    Open Browser    ${url}    ${browser}    
+    Maximize Browser Window

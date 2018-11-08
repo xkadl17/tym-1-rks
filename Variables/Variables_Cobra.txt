@@ -1,0 +1,17 @@
+*** Variables ***
+${image_logo_cobra}    id=logo
+${input_search_box_cobra}    id=s-word
+${seach_button_cobra}    class=b-search
+${keyword}    Cobra dveřní kování VISION R plochá (nerez)
+${products_block_cobra}    class=products
+${email_cobra}    info@kovani-cobra.cz   
+${buy_button_cobra}    class=b-cart2
+${select_variant}    id=parameter-id-7
+${variant}    BB (pokojový klíč)
+${cart_button_cobra}    id=header-cart-button
+${continue_order_cobra}    id=continue-order-button
+${delivery_country_cobra}    id=deliveryCountryId
+${msg_country_cobra}    Tato kombinace dopravy a platby není možná. 
+${waiting_for_element}    id=shippingId-15
+${delivery_cobra}    shippingId
+${payment_cobra}    billingId

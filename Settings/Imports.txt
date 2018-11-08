@@ -1,0 +1,4 @@
+*** Settings ***
+Resource    ../Keywords/COBRA_Keywords.txt
+Resource    ../Settings/Browsing_Settings.txt
+Resource    ../Variables/Variables_Cobra.txt

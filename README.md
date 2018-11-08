@@ -1,1 +1,3 @@
-# tym-1-rks
+# Tým 1
+
+Robot Framework

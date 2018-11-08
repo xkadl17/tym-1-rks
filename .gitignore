@@ -1,0 +1,7 @@
+*.iml
+.idea
+.project
+log.html
+report.html
+output.xml
+*.png
