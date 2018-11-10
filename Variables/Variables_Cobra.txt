@@ -15,3 +15,28 @@ ${msg_country_cobra}    Tato kombinace dopravy a platby není možná.
 ${waiting_for_element}    id=shippingId-15
 ${delivery_cobra}    shippingId
 ${payment_cobra}    billingId
+${next_order_button}    class=b-next
+${submit_order_button}  id=submit-order
+${submit_order_form}    id=order-form
+${added_to_cart_msg}    Produkt byl přidán do nákupního košíku
+${about_us_id}     Rekapitulace objednávky
+${checkbox_terms_of_payment}    id=consents3
+${checkbox_gdpr}    id=consents9
+${terms_of_payment_error_msg}    id=3000
+${checkbox_error}   xpath=//input[@type='checkbox' and contains(concat(' ',normalize-space(@class),' '),' error-field ')]
+${field_error}  xpath=//input[@type='text' and contains(concat(' ',normalize-space(@class),' '),' error-field ')]
+${email_field}  id=email
+${phone_field}  id=phone
+${name_field}   id=billFullName
+${street_field}     id=billStreet
+${city_field}   id=billCity
+${zip_field}    id=billZip
+${email}    xx@yy.com
+${phone}    778123456
+${name}     Test Test
+${street}   Kocourkov 1
+${city}     Praha
+${zip}      14000
+${checkbox_another_shipping}    another-shipping
+${another_shipping_hidden}  xpath=//fieldset[@style='display: none;']
+${another_shipping_shown}  xpath=//fieldset[@style='display: block;']
