@@ -1,0 +1,24 @@
+*** Keywords ***
+Capture Screenshot And Close Browser
+    Capture Page Screenshot
+    Close Browser 
+    
+Open Cobra
+    [Arguments]    ${url}    ${browser}    
+    Open Browser    ${url}    ${browser}    
+    Maximize Browser Window
+
+Goto About Us
+    Input Text    ${input_search_box_cobra}    ${keyword}
+    Click Button    ${seach_button_cobra}
+    Wait Until Page Contains    ${keyword}
+    Click Link    ${keyword}
+    Select From List By Label    ${select_variant}    ${variant}
+    Click Button    ${buy_button_cobra}
+    Wait Until Page Contains    ${added_to_cart_msg}
+    Click Link    ${cart_button_cobra}
+    Wait Until Page Contains    ${keyword}
+    Click Link    ${continue_order_cobra}
+    Wait Until Page Contains Element    ${next_order_button}
+    Click Element  ${next_order_button}
+    Wait Until Page Contains    ${about_us_id}

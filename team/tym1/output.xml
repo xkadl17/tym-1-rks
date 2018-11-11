@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181111 19:10:55.810" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="H:\team\tym1" id="s1" name="Tym1">
+<suite source="H:\team\tym1\Tests" id="s1-s1" name="Tests">
+<suite source="H:\team\tym1\Tests\testVyhledaniVyber.robot" id="s1-s1-s1" name="testVyhledaniVyber">
+<test id="s1-s1-s1-t1" name="Test Filtrovani Produktu">
+<kw type="setup" name="Open Cobra" library="COBRA_Keywords">
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181111 19:10:56.039" level="INFO">Opening browser 'chrome' to base url 'http://www.kovani-cobra.cz/'.</msg>
+<status status="PASS" endtime="20181111 19:11:02.080" starttime="20181111 19:10:56.039"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181111 19:11:03.529" starttime="20181111 19:11:02.080"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:03.529" starttime="20181111 19:10:56.038"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>/nerezove-kovani/</arg>
+</arguments>
+<msg timestamp="20181111 19:11:03.531" level="INFO">Clicking link '/nerezove-kovani/'.</msg>
+<status status="PASS" endtime="20181111 19:11:04.724" starttime="20181111 19:11:03.530"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>id=param-filter-hover</arg>
+</arguments>
+<msg timestamp="20181111 19:11:04.726" level="INFO">Clicking link 'id=param-filter-hover'.</msg>
+<status status="PASS" endtime="20181111 19:11:04.853" starttime="20181111 19:11:04.725"></status>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name=manufacturerId[]</arg>
+</arguments>
+<msg timestamp="20181111 19:11:04.854" level="INFO">Selecting checkbox 'name=manufacturerId[]'.</msg>
+<status status="PASS" endtime="20181111 19:11:05.173" starttime="20181111 19:11:04.854"></status>
+</kw>
+<kw type="teardown" name="Capture Screenshot And Close Browser" library="COBRA_Keywords">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181111 19:11:05.666" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181111 19:11:05.667" starttime="20181111 19:11:05.174"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181111 19:11:08.827" starttime="20181111 19:11:05.667"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:08.828" starttime="20181111 19:11:05.174"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:08.828" critical="yes" starttime="20181111 19:10:56.037"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Test Vyhledani a Vyber Produktu">
+<kw type="setup" name="Open Cobra" library="COBRA_Keywords">
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:08.832" level="INFO">Opening browser 'chrome' to base url 'http://www.kovani-cobra.cz/'.</msg>
+<status status="PASS" endtime="20181111 19:11:14.939" starttime="20181111 19:11:08.832"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181111 19:11:16.346" starttime="20181111 19:11:14.940"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:16.347" starttime="20181111 19:11:08.830"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_search_box_cobra}</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:16.348" level="INFO">Typing text 'Cobra dveřní kování VISION R plochá (nerez)' into text field 'id=s-word'.</msg>
+<status status="PASS" endtime="20181111 19:11:16.881" starttime="20181111 19:11:16.347"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${seach_button_cobra}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:16.882" level="INFO">Clicking button 'class=b-search'.</msg>
+<status status="PASS" endtime="20181111 19:11:17.945" starttime="20181111 19:11:16.882"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:18.005" level="INFO">Current page contains text 'Cobra dveřní kování VISION R plochá (nerez)'.</msg>
+<status status="PASS" endtime="20181111 19:11:18.005" starttime="20181111 19:11:17.950"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:18.006" level="INFO">Clicking link 'Cobra dveřní kování VISION R plochá (nerez)'.</msg>
+<status status="PASS" endtime="20181111 19:11:19.342" starttime="20181111 19:11:18.006"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${select_variant}</arg>
+<arg>${variant}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:19.343" level="INFO">Selecting options from selection list 'id=parameter-id-7' by label BB (pokojový klíč).</msg>
+<status status="PASS" endtime="20181111 19:11:19.562" starttime="20181111 19:11:19.343"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${buy_button_cobra}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:19.563" level="INFO">Clicking button 'class=b-cart2'.</msg>
+<status status="PASS" endtime="20181111 19:11:21.113" starttime="20181111 19:11:19.562"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${cart_button_cobra}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:21.115" level="INFO">Clicking link 'id=header-cart-button'.</msg>
+<status status="PASS" endtime="20181111 19:11:22.144" starttime="20181111 19:11:21.113"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20181111 19:11:22.183" level="INFO">Current page contains text 'Cobra dveřní kování VISION R plochá (nerez)'.</msg>
+<status status="PASS" endtime="20181111 19:11:22.183" starttime="20181111 19:11:22.145"></status>
+</kw>
+<kw type="teardown" name="Capture Screenshot And Close Browser" library="COBRA_Keywords">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181111 19:11:22.592" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181111 19:11:22.592" starttime="20181111 19:11:22.185"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181111 19:11:25.798" starttime="20181111 19:11:22.592"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:25.799" starttime="20181111 19:11:22.184"></status>
+</kw>
+<status status="PASS" endtime="20181111 19:11:25.799" critical="yes" starttime="20181111 19:11:08.829"></status>
+</test>
+<status status="PASS" endtime="20181111 19:11:25.800" starttime="20181111 19:10:55.870"></status>
+</suite>
+<status status="PASS" endtime="20181111 19:11:25.804" starttime="20181111 19:10:55.867"></status>
+</suite>
+<status status="PASS" endtime="20181111 19:11:25.807" starttime="20181111 19:10:55.839"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tym1" pass="2">Tym1</stat>
+<stat fail="0" id="s1-s1" name="Tests" pass="2">Tym1.Tests</stat>
+<stat fail="0" id="s1-s1-s1" name="testVyhledaniVyber" pass="2">Tym1.Tests.testVyhledaniVyber</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

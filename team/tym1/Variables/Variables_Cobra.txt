@@ -1,0 +1,42 @@
+*** Variables ***
+${image_logo_cobra}    id=logo
+${input_search_box_cobra}    id=s-word
+${seach_button_cobra}    class=b-search
+${keyword}    Cobra dveřní kování VISION R plochá (nerez)
+${products_block_cobra}    class=products
+${email_cobra}    info@kovani-cobra.cz   
+${buy_button_cobra}    class=b-cart2
+${select_variant}    id=parameter-id-7
+${variant}    BB (pokojový klíč)
+${cart_button_cobra}    id=header-cart-button
+${continue_order_cobra}    id=continue-order-button
+${delivery_country_cobra}    id=deliveryCountryId
+${msg_country_cobra}    Tato kombinace dopravy a platby není možná. 
+${waiting_for_element}    id=shippingId-15
+${delivery_cobra}    shippingId
+${payment_cobra}    billingId
+${next_order_button}    class=b-next
+${submit_order_button}  id=submit-order
+${submit_order_form}    id=order-form
+${added_to_cart_msg}    Produkt byl přidán do nákupního košíku
+${about_us_id}     Rekapitulace objednávky
+${checkbox_terms_of_payment}    id=consents3
+${checkbox_gdpr}    id=consents9
+${terms_of_payment_error_msg}    id=3000
+${checkbox_error}   xpath=//input[@type='checkbox' and contains(concat(' ',normalize-space(@class),' '),' error-field ')]
+${field_error}  xpath=//input[@type='text' and contains(concat(' ',normalize-space(@class),' '),' error-field ')]
+${email_field}  id=email
+${phone_field}  id=phone
+${name_field}   id=billFullName
+${street_field}     id=billStreet
+${city_field}   id=billCity
+${zip_field}    id=billZip
+${email}    xx@yy.com
+${phone}    778123456
+${name}     Test Test
+${street}   Kocourkov 1
+${city}     Praha
+${zip}      14000
+${checkbox_another_shipping}    another-shipping
+${another_shipping_hidden}  xpath=//fieldset[@style='display: none;']
+${another_shipping_shown}  xpath=//fieldset[@style='display: block;']
