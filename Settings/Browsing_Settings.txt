@@ -1,3 +1,4 @@
 *** Variables ***
 ${browser}    chrome 
 ${url}    http://www.kovani-cobra.cz/   
+${url-sasha}    http://www.kovani-cobra.cz/dverni-doplnky-cobra/cobra-ochranna-pridavna-rozeta-371-kulata--nerez/  

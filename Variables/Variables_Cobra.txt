@@ -40,3 +40,51 @@ ${zip}      14000
 ${checkbox_another_shipping}    another-shipping
 ${another_shipping_hidden}  xpath=//fieldset[@style='display: none;']
 ${another_shipping_shown}  xpath=//fieldset[@style='display: block;']
+${registrace}    /registrace/
+${email_reg_loc}    id=email
+${email_reg_input}    test8@test.cz
+${email_log_input}    test7@test.cz
+${pass_reg_loc}    id=password
+${pass_reg_loc_again}    id=passwordAgain
+${pass_reg_input}    123456789aA.
+${Checkbox_reg_select_loc}    id=consents9
+${btn_reg_loc}    xpath=//input[@type='submit']
+${verification_reg_loc_valid}    xpath=//h1[@id='h1-system-13']
+${verification_reg_loc_invalid}    xpath=//div[@class='information-bubble']
+${login_page}    /login/?backTo=%2F
+${client_page}    /klient/
+${client_page_id}   xpath=//a[@href='/klient/']
+${log_loc_valid}    xpath=//h1[@id='h1-system-12']
+${do_kosiku-sasha}	class=b-cart2
+${do_kosiku_red-sasha}    id=header-cart-button
+${continue_order-sasha}	id=continue-order-button
+${continue_order_2-sasha}	class=b-next
+${email-sasha}	id=email
+${email-text-sasha}	tomas20@seznam.cz
+${phone-sasha}	id=phone
+${name-sasha}	id=billFullName
+${street-sasha}	id=billStreet
+${mesto-sasha}	id=billCity
+${psc-sasha}	id=billZip
+${registrace-sasha}	id=set-registration
+${poznamka-sasha}	id=add-note
+${poznamka-input-sasha}	name=remark
+${poznamka-text-sasha}	Super!
+${firma-sasha}	id=company-shopping
+${firma-name-sasha}	id=billCompany
+${firma-name-text-sasha}	Cobra
+${firma-ic-sasha}	id=companyId
+${firma-ic-text-sasha}	12345678
+${firma-dic-sasha}	id=vatId
+${firma-dic-text-sasha}	CZ12345678
+${podtverzeni-sasha}	id=consents3
+${podtverzeni-2-sasha}	id=consents9
+${odeslat-sasha}	id=submit-order
+${link_kovani}	/okenni-a-balkonove-kovani/
+${filter}    id=param-filter-hover
+${filter_type}    class=param-filter-single
+${checkbox_oliva}    xpath=//input[@type='checkbox' and @value='Oliva']
+${container_products}    class=products
+${oliva_product1}    oliva MANHAIM
+${oliva_product2}    OLIVA ALT WIEN
+

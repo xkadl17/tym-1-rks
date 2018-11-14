@@ -2,16 +2,17 @@
 Library    Selenium2Library
 Resource    ../Settings/Imports.txt
 Test Setup    Open Cobra    ${url}    ${browser}
-Test Teardown    Capture Screenshot And Close Browser  
+Test Teardown    Close Browser  
 
 *** Test Cases ***
-Test Filtrovani Produktu
-    #promenne potom doplnim, zatim napevno
-    Click Link    /nerezove-kovani/
-    Click Link    id=param-filter-hover
-    Select Checkbox    name=manufacturerId[]
-          
-
+ Test Filtrovani Typu Produktu Oliva
+    Click Link    ${link_kovani}
+    Click Link    ${filter}
+    Wait Until Page Contains Element    ${filter_type}   
+    Select Checkbox    ${checkbox_oliva}
+    Wait Until Page Contains Element    ${container_products}   
+    Page Should Contain    ${oliva_product1}    ${oliva_product2}
+        
 Test Vyhledani a Vyber Produktu
     Input Text    ${input_search_box_cobra}    ${keyword}     
     Click Button    ${seach_button_cobra}
